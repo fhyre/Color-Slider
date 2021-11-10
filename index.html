@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap" rel="stylesheet"> 
+    <title>Slider JS</title>
+</head>
+<body>
+    
+    <div class="window-1"></div>
+
+    <div class="middle-container">
+       <div class="slider-container">
+            <!-- Red Slider -->
+            <div class="inner-slider-container">
+                <p class="color-name" id="red-name">Red:</p>
+                <input autocomplete="off" type="range" min="0" max="255" value="218" class="sliders" id="red-slider">
+                <p class="slider-value" id="red-slider-val">218</p>
+            </div>
+
+            <!-- Green Slider -->
+            <div class="inner-slider-container">
+                <p class="color-name" id="green-name">Green:</p>
+                <input autocomplete="off" type="range" min="0" max="255" value="140" class="sliders" id="green-slider">
+                <p class="slider-value" id="green-slider-val">140</p>
+            </div>
+
+            <!-- Blue Color -->
+            <div class="inner-slider-container">
+                <p class="color-name" id="blue-name">Blue:</p>
+                <input autocomplete="off" type="range" min="0" max="255" value="166" class="sliders" id="blue-slider">
+                <p class="slider-value" id="blue-slider-val">166</p>
+            </div>
+
+            <!-- Opacity -->
+            <div class="inner-slider-container">
+                <p class="color-name" id="opacity-name">Opacity:</p>
+                <input autocomplete="off" type="range" min="0" max="1" value="0.5" step="0.001" class="sliders" id="opacity-slider">
+                <p class="slider-value" id="opacity-slider-val">0.5</p>
+            </div>
+
+            <div class="choose-button">
+                <button class="save-color-button">Save This Color!</button>
+            </div>
+        </div>
+
+        <div class="store-color-container"></div> 
+    </div>
+    
+
+    <div class="click-to-reveal">
+        <p>Reveal Stored Colors</p>
+    </div>
+
+    
+
+
+    <script src="script.js"></script>
+</body>
+</html>
